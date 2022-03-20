@@ -83,3 +83,8 @@ static bool bit(T value, unsigned index) {
     }
     return 0 != (value & (1 << index));
 }
+
+template<typename T>
+static bitArray<T> transfer(T value) {
+    return bitArray(value);
+}
